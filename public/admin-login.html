@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google" content="notranslate">
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="display:flex; align-items:center; justify-content:center; min-height:100vh; background:#0a0a0a;" translate="no">
+    <div class="login-window">
+        <div class="login-window-bar">
+            <span class="login-window-title" id="titleText">ADMIN LOGIN</span>
+            <div class="login-dots">
+                <div class="login-dot r"></div>
+                <div class="login-dot y"></div>
+                <div class="login-dot g"></div>
+            </div>
+        </div>
+        <div class="login-window-body">
+            <div id="errorMsg" style="display:none" class="login-error-msg">Wrong credentials</div>
+            <form method="POST" action="/admin/login">
+                <div class="login-form-group">
+                    <label id="userLabel">USERNAME</label>
+                    <input type="text" name="username" id="userInput" placeholder="admin" required autocomplete="username">
+                </div>
+                <div class="login-form-group">
+                    <label id="passLabel">PASSWORD</label>
+                    <input type="password" name="password" id="passInput" placeholder="••••••••" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="login-btn" id="loginBtn">LOGIN</button>
+            </form>
+            <a href="/" class="login-back-link" id="backLink">← BACK TO SITE</a>
+        </div>
+    </div>
+    <script src="/admin-login.js"></script>
+</body>
+</html>

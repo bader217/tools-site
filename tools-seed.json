@@ -1,0 +1,1423 @@
+[
+  {
+    "name": "ChatGPT",
+    "cat": "ai",
+    "badge": "free",
+    "description": "AI assistant from OpenAI that helps with almost anything",
+    "url": "https://chat.openai.com"
+  },
+  {
+    "name": "Claude",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Smart assistant from Anthropic, great for writing and analysis",
+    "url": "https://claude.ai"
+  },
+  {
+    "name": "Gemini",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Google's AI assistant integrated with all their services",
+    "url": "https://gemini.google.com"
+  },
+  {
+    "name": "Perplexity",
+    "cat": "ai",
+    "badge": "free",
+    "description": "AI-powered search engine with cited sources",
+    "url": "https://perplexity.ai"
+  },
+  {
+    "name": "Midjourney ️",
+    "cat": "ai",
+    "badge": "paid",
+    "description": "Generates high-quality images from text prompts",
+    "url": "https://midjourney.com"
+  },
+  {
+    "name": "ElevenLabs ️",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Converts text into realistic human-like voice",
+    "url": "https://elevenlabs.io"
+  },
+  {
+    "name": "Runway",
+    "cat": "ai",
+    "badge": "free",
+    "description": "AI-powered video generation and editing",
+    "url": "https://runwayml.com"
+  },
+  {
+    "name": "Grok",
+    "cat": "ai",
+    "badge": "free",
+    "description": "AI assistant from xAI by Elon Musk",
+    "url": "https://grok.x.ai"
+  },
+  {
+    "name": "Copilot",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Microsoft's AI assistant built into Windows",
+    "url": "https://copilot.microsoft.com"
+  },
+  {
+    "name": "Adobe Firefly",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Adobe's AI image generation tool",
+    "url": "https://firefly.adobe.com"
+  },
+  {
+    "name": "Sora",
+    "cat": "ai",
+    "badge": "paid",
+    "description": "Generates realistic videos from text descriptions only",
+    "url": "https://openai.com/sora"
+  },
+  {
+    "name": "Figma",
+    "cat": "design",
+    "badge": "free",
+    "description": "The most popular UI design tool on the internet",
+    "url": "https://figma.com"
+  },
+  {
+    "name": "Canva ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Design posts and presentations easily with no experience",
+    "url": "https://canva.com"
+  },
+  {
+    "name": "Coolors",
+    "cat": "design",
+    "badge": "free",
+    "description": "Generates harmonious color palettes for your project",
+    "url": "https://coolors.co"
+  },
+  {
+    "name": "Unsplash",
+    "cat": "design",
+    "badge": "free",
+    "description": "Free high-quality stock photos",
+    "url": "https://unsplash.com"
+  },
+  {
+    "name": "Iconify ⭐",
+    "cat": "design",
+    "badge": "free",
+    "description": "Thousands of free icons",
+    "url": "https://iconify.design"
+  },
+  {
+    "name": "Framer ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Build beautiful websites with almost no code",
+    "url": "https://framer.com"
+  },
+  {
+    "name": "Remove.bg ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Removes image backgrounds in one second",
+    "url": "https://remove.bg"
+  },
+  {
+    "name": "Pexels",
+    "cat": "design",
+    "badge": "free",
+    "description": "Free high-quality photos and videos",
+    "url": "https://pexels.com"
+  },
+  {
+    "name": "Google Fonts",
+    "cat": "design",
+    "badge": "free",
+    "description": "Thousands of free fonts from Google",
+    "url": "https://fonts.google.com"
+  },
+  {
+    "name": "Spline",
+    "cat": "design",
+    "badge": "free",
+    "description": "Design 3D elements for the web",
+    "url": "https://spline.design"
+  },
+  {
+    "name": "Looka ️",
+    "cat": "design",
+    "badge": "paid",
+    "description": "Design your company logo using AI",
+    "url": "https://looka.com"
+  },
+  {
+    "name": "CapCut ️",
+    "cat": "video",
+    "badge": "free",
+    "description": "Easy and popular video editing app",
+    "url": "https://capcut.com"
+  },
+  {
+    "name": "DaVinci Resolve",
+    "cat": "video",
+    "badge": "free",
+    "description": "Professional and free video editing software",
+    "url": "https://blackmagicdesign.com/products/davinciresolve"
+  },
+  {
+    "name": "Descript",
+    "cat": "video",
+    "badge": "free",
+    "description": "Edit video by editing its transcript",
+    "url": "https://descript.com"
+  },
+  {
+    "name": "OBS Studio",
+    "cat": "video",
+    "badge": "free",
+    "description": "Screen recording and live streaming for free",
+    "url": "https://obsproject.com"
+  },
+  {
+    "name": "Handbrake ️",
+    "cat": "video",
+    "badge": "free",
+    "description": "Compress and convert video to any format for free",
+    "url": "https://handbrake.fr"
+  },
+  {
+    "name": "Grammarly",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Corrects English writing mistakes",
+    "url": "https://grammarly.com"
+  },
+  {
+    "name": "Quillbot ️",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Rewrites text in different ways",
+    "url": "https://quillbot.com"
+  },
+  {
+    "name": "Copy.ai ️",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Write marketing content using AI",
+    "url": "https://copy.ai"
+  },
+  {
+    "name": "Hemingway",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Simplifies your writing and makes it clearer",
+    "url": "https://hemingwayapp.com"
+  },
+  {
+    "name": "Wordtune",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Suggests different ways to write the same sentence",
+    "url": "https://wordtune.com"
+  },
+  {
+    "name": "Hugging Face",
+    "cat": "ai",
+    "badge": "free",
+    "description": "The largest open-source AI models platform",
+    "url": "https://huggingface.co"
+  },
+  {
+    "name": "Stable Diffusion",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Free open-source image generation you install locally",
+    "url": "https://stability.ai"
+  },
+  {
+    "name": "Kling AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Professional video generation from text and images",
+    "url": "https://klingai.com"
+  },
+  {
+    "name": "Ideogram ️",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generates images with clear embedded text at high accuracy",
+    "url": "https://ideogram.ai"
+  },
+  {
+    "name": "Leonardo AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Multi-style image generation for games and design",
+    "url": "https://leonardo.ai"
+  },
+  {
+    "name": "Gamma",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Turns your ideas into professional presentations automatically",
+    "url": "https://gamma.app"
+  },
+  {
+    "name": "Otter.ai ️",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Converts conversations and meetings into written text",
+    "url": "https://otter.ai"
+  },
+  {
+    "name": "Elicit",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Scientific research assistant that summarizes papers",
+    "url": "https://elicit.com"
+  },
+  {
+    "name": "Consensus",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Searches scientific studies and answers with reliable evidence",
+    "url": "https://consensus.app"
+  },
+  {
+    "name": "You.com",
+    "cat": "ai",
+    "badge": "free",
+    "description": "AI-powered search engine with high privacy",
+    "url": "https://you.com"
+  },
+  {
+    "name": "Phind",
+    "cat": "ai",
+    "badge": "free",
+    "description": "AI-powered search engine for programmers",
+    "url": "https://phind.com"
+  },
+  {
+    "name": "Cursor ️",
+    "cat": "ai",
+    "badge": "free",
+    "description": "AI code editor that writes code with you",
+    "url": "https://cursor.sh"
+  },
+  {
+    "name": "v0",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generates web interfaces from text descriptions quickly",
+    "url": "https://v0.dev"
+  },
+  {
+    "name": "Bolt.new",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Builds complete apps from a simple text idea",
+    "url": "https://bolt.new"
+  },
+  {
+    "name": "Lovable",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Converts text descriptions into real web apps",
+    "url": "https://lovable.dev"
+  },
+  {
+    "name": "Windsurf",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Smart code editor from Codeium with powerful AI features",
+    "url": "https://codeium.com/windsurf"
+  },
+  {
+    "name": "Napkin ️",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Converts text into illustrations and diagrams automatically",
+    "url": "https://napkin.ai"
+  },
+  {
+    "name": "Suno",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generates complete songs from text using AI",
+    "url": "https://suno.com"
+  },
+  {
+    "name": "Udio",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generate professional music using AI",
+    "url": "https://udio.com"
+  },
+  {
+    "name": "Hailuo",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generate realistic video from images and text",
+    "url": "https://hailuoai.com"
+  },
+  {
+    "name": "Adobe Express",
+    "cat": "design",
+    "badge": "free",
+    "description": "Quick design tool from Adobe with ready templates",
+    "url": "https://express.adobe.com"
+  },
+  {
+    "name": "Vectr ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Free vector design tool that works in the browser",
+    "url": "https://vectr.com"
+  },
+  {
+    "name": "Photopea ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Full free Photoshop that works in the browser",
+    "url": "https://photopea.com"
+  },
+  {
+    "name": "GIMP ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Free and open-source image editing software",
+    "url": "https://gimp.org"
+  },
+  {
+    "name": "Inkscape ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Free and open-source vector design software",
+    "url": "https://inkscape.org"
+  },
+  {
+    "name": "Pixlr",
+    "cat": "design",
+    "badge": "free",
+    "description": "Edit photos online with professional tools",
+    "url": "https://pixlr.com"
+  },
+  {
+    "name": "Placeit",
+    "cat": "design",
+    "badge": "free",
+    "description": "Mockups and templates to showcase your designs",
+    "url": "https://placeit.net"
+  },
+  {
+    "name": "Storyset",
+    "cat": "design",
+    "badge": "free",
+    "description": "Free customizable illustrations",
+    "url": "https://storyset.com"
+  },
+  {
+    "name": "unDraw",
+    "cat": "design",
+    "badge": "free",
+    "description": "Free SVG illustrations for any project",
+    "url": "https://undraw.co"
+  },
+  {
+    "name": "Haikei",
+    "cat": "design",
+    "badge": "free",
+    "description": "Generate unique SVG backgrounds and shapes for websites",
+    "url": "https://haikei.app"
+  },
+  {
+    "name": "Rive",
+    "cat": "design",
+    "badge": "free",
+    "description": "Create interactive animations for websites and apps",
+    "url": "https://rive.app"
+  },
+  {
+    "name": "Lottie Files",
+    "cat": "design",
+    "badge": "free",
+    "description": "Huge library of free animations for developers",
+    "url": "https://lottiefiles.com"
+  },
+  {
+    "name": "Colorhunt",
+    "cat": "design",
+    "badge": "free",
+    "description": "Color palettes curated by real designers",
+    "url": "https://colorhunt.co"
+  },
+  {
+    "name": "Shots.so",
+    "cat": "design",
+    "badge": "free",
+    "description": "Professional mockups to showcase your apps and sites",
+    "url": "https://shots.so"
+  },
+  {
+    "name": "Screely ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Turns your screenshot into a beautiful professional image",
+    "url": "https://screely.com"
+  },
+  {
+    "name": "Kdenlive",
+    "cat": "video",
+    "badge": "free",
+    "description": "Powerful open-source video editing software.",
+    "url": "https://kdenlive.org"
+  },
+  {
+    "name": "Shotcut ️",
+    "cat": "video",
+    "badge": "free",
+    "description": "Simple free video editor for all platforms.",
+    "url": "https://shotcut.org"
+  },
+  {
+    "name": "Clipchamp",
+    "cat": "video",
+    "badge": "free",
+    "description": "Microsoft video editor built into Windows.",
+    "url": "https://clipchamp.com"
+  },
+  {
+    "name": "Veed.io ️",
+    "cat": "video",
+    "badge": "free",
+    "description": "Online video editor with automatic captions.",
+    "url": "https://veed.io"
+  },
+  {
+    "name": "Invideo AI",
+    "cat": "video",
+    "badge": "free",
+    "description": "Turn text into professional videos with AI.",
+    "url": "https://invideo.io"
+  },
+  {
+    "name": "Pictory ️",
+    "cat": "video",
+    "badge": "free",
+    "description": "Automatically turn articles and text into videos.",
+    "url": "https://pictory.ai"
+  },
+  {
+    "name": "HeyGen",
+    "cat": "video",
+    "badge": "free",
+    "description": "Create videos with realistic human avatars.",
+    "url": "https://heygen.com"
+  },
+  {
+    "name": "Synthesia",
+    "cat": "video",
+    "badge": "paid",
+    "description": "Training videos with human avatars.",
+    "url": "https://synthesia.io"
+  },
+  {
+    "name": "Loom ScreenStudio",
+    "cat": "video",
+    "badge": "free",
+    "description": "Professional screen recording with polished effects.",
+    "url": "https://screenstudio.lemonsqueezy.com"
+  },
+  {
+    "name": "Notion AI ️",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "Smart writing assistant built into Notion",
+    "url": "https://notion.so/product/ai"
+  },
+  {
+    "name": "Jasper",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "Write professional marketing content with AI",
+    "url": "https://jasper.ai"
+  },
+  {
+    "name": "Writesonic ️",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Write articles and ads with AI",
+    "url": "https://writesonic.com"
+  },
+  {
+    "name": "Rytr ️",
+    "cat": "writing",
+    "badge": "free",
+    "description": "AI writing assistant at affordable prices",
+    "url": "https://rytr.me"
+  },
+  {
+    "name": "Sudowrite",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "AI assistant for creative and novel writing",
+    "url": "https://sudowrite.com"
+  },
+  {
+    "name": "ProWritingAid",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Deep grammar and style check for writers",
+    "url": "https://prowritingaid.com"
+  },
+  {
+    "name": "LanguageTool",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Spelling and grammar check supporting Arabic",
+    "url": "https://languagetool.org"
+  },
+  {
+    "name": "DeepL ️",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Very accurate translation surpassing Google Translate",
+    "url": "https://deepl.com"
+  },
+  {
+    "name": "Speechify ️",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Reads any text or article to you in a natural voice",
+    "url": "https://speechify.com"
+  },
+  {
+    "name": "Readwise",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "Saves your book quotes and reminds you daily",
+    "url": "https://readwise.io"
+  },
+  {
+    "name": "Mistral AI ️",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Fast, open European AI models",
+    "url": "https://mistral.ai"
+  },
+  {
+    "name": "Meta AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Meta's AI assistant built into WhatsApp and Instagram",
+    "url": "https://meta.ai"
+  },
+  {
+    "name": "Poe",
+    "cat": "ai",
+    "badge": "free",
+    "description": "A platform that brings multiple AI models together in one place",
+    "url": "https://poe.com"
+  },
+  {
+    "name": "Character.AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Chat with a variety of AI characters",
+    "url": "https://character.ai"
+  },
+  {
+    "name": "Janitor AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Conversations with custom AI characters",
+    "url": "https://janitor.ai"
+  },
+  {
+    "name": "Perplexity Labs",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Try Perplexity's latest AI models",
+    "url": "https://labs.perplexity.ai"
+  },
+  {
+    "name": "Groq",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Run AI models at lightning speed for free",
+    "url": "https://groq.com"
+  },
+  {
+    "name": "Together AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Run open-source models in the cloud",
+    "url": "https://together.ai"
+  },
+  {
+    "name": "Replicate",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Run a variety of AI models through an API",
+    "url": "https://replicate.com"
+  },
+  {
+    "name": "Fal.ai",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generate images and videos with multiple models quickly",
+    "url": "https://fal.ai"
+  },
+  {
+    "name": "Playground AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generate professional images for free with multiple models",
+    "url": "https://playground.com"
+  },
+  {
+    "name": "Krea AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generate and enhance images with AI in real time",
+    "url": "https://krea.ai"
+  },
+  {
+    "name": "Magnific AI",
+    "cat": "ai",
+    "badge": "paid",
+    "description": "Upscale images and improve their quality with AI",
+    "url": "https://magnific.ai"
+  },
+  {
+    "name": "Topaz Photo AI",
+    "cat": "ai",
+    "badge": "paid",
+    "description": "Professionally enhance image quality and remove noise",
+    "url": "https://topazlabs.com"
+  },
+  {
+    "name": "Luma AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Generate 3D video from images and text",
+    "url": "https://lumalabs.ai"
+  },
+  {
+    "name": "Hedra",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Animate images and make them talk with AI",
+    "url": "https://hedra.com"
+  },
+  {
+    "name": "D-ID",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Animate face photos and create talking videos",
+    "url": "https://d-id.com"
+  },
+  {
+    "name": "Rask AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Translate and dub videos with AI",
+    "url": "https://rask.ai"
+  },
+  {
+    "name": "Captions AI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Add automatic subtitles to videos with high accuracy",
+    "url": "https://captions.ai"
+  },
+  {
+    "name": "Whisper ️",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Convert speech to text with high accuracy from OpenAI",
+    "url": "https://openai.com/research/whisper"
+  },
+  {
+    "name": "AssemblyAI",
+    "cat": "ai",
+    "badge": "free",
+    "description": "A powerful API for speech-to-text with advanced analysis",
+    "url": "https://assemblyai.com"
+  },
+  {
+    "name": "Deepgram",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Convert speech to text at high speed via API",
+    "url": "https://deepgram.com"
+  },
+  {
+    "name": "NotebookLM",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Google's research assistant that analyzes your files and documents",
+    "url": "https://notebooklm.google.com"
+  },
+  {
+    "name": "Gemini Advanced",
+    "cat": "ai",
+    "badge": "paid",
+    "description": "Google's most powerful model with advanced capabilities",
+    "url": "https://gemini.google.com/advanced"
+  },
+  {
+    "name": "Claude Projects",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Create organized projects with long-term memory in Claude",
+    "url": "https://claude.ai"
+  },
+  {
+    "name": "Aria",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Opera's AI assistant built into the browser",
+    "url": "https://opera.com/features/aria"
+  },
+  {
+    "name": "Copilot Studio ️",
+    "cat": "ai",
+    "badge": "paid",
+    "description": "Build custom chatbots with AI",
+    "url": "https://copilotstudio.microsoft.com"
+  },
+  {
+    "name": "Dify",
+    "cat": "ai",
+    "badge": "free",
+    "description": "An open platform for building AI applications",
+    "url": "https://dify.ai"
+  },
+  {
+    "name": "Flowise",
+    "cat": "ai",
+    "badge": "free",
+    "description": "Build AI workflows with a visual interface",
+    "url": "https://flowiseai.com"
+  },
+  {
+    "name": "LangChain",
+    "cat": "ai",
+    "badge": "free",
+    "description": "A framework for building LLM apps for developers",
+    "url": "https://langchain.com"
+  },
+  {
+    "name": "Whisk",
+    "cat": "design",
+    "badge": "free",
+    "description": "Google's tool for generating images by blending images together",
+    "url": "https://labs.google/fx/tools/whisk"
+  },
+  {
+    "name": "Adobe Illustrator ️",
+    "cat": "design",
+    "badge": "paid",
+    "description": "The world's most famous vector design software",
+    "url": "https://adobe.com/products/illustrator"
+  },
+  {
+    "name": "Adobe Photoshop ️",
+    "cat": "design",
+    "badge": "paid",
+    "description": "The professional image-editing standard for decades",
+    "url": "https://adobe.com/products/photoshop"
+  },
+  {
+    "name": "Affinity Designer ️",
+    "cat": "design",
+    "badge": "paid",
+    "description": "A professional Illustrator alternative at a much lower price",
+    "url": "https://affinity.serif.com/designer"
+  },
+  {
+    "name": "Sketch",
+    "cat": "design",
+    "badge": "paid",
+    "description": "A popular UI design tool for Mac users",
+    "url": "https://sketch.com"
+  },
+  {
+    "name": "Lunacy",
+    "cat": "design",
+    "badge": "free",
+    "description": "A free Figma alternative that works offline",
+    "url": "https://icons8.com/lunacy"
+  },
+  {
+    "name": "Penpot ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "An open-source, self-hostable UI design tool",
+    "url": "https://penpot.app"
+  },
+  {
+    "name": "Maze",
+    "cat": "design",
+    "badge": "free",
+    "description": "User testing and feedback collection for designs",
+    "url": "https://maze.co"
+  },
+  {
+    "name": "Hotjar",
+    "cat": "design",
+    "badge": "free",
+    "description": "Track user behavior on your site with heatmaps",
+    "url": "https://hotjar.com"
+  },
+  {
+    "name": "Zeplin",
+    "cat": "design",
+    "badge": "free",
+    "description": "Deliver designs to developers with precise specs",
+    "url": "https://zeplin.io"
+  },
+  {
+    "name": "Abstract",
+    "cat": "design",
+    "badge": "paid",
+    "description": "Manage design file versions like Git",
+    "url": "https://abstract.com"
+  },
+  {
+    "name": "Noun Project",
+    "cat": "design",
+    "badge": "free",
+    "description": "Millions of icons and symbols for design",
+    "url": "https://thenounproject.com"
+  },
+  {
+    "name": "Flaticon",
+    "cat": "design",
+    "badge": "free",
+    "description": "The largest free icon library online",
+    "url": "https://flaticon.com"
+  },
+  {
+    "name": "SVGRepo",
+    "cat": "design",
+    "badge": "free",
+    "description": "A huge library of free SVG files",
+    "url": "https://svgrepo.com"
+  },
+  {
+    "name": "Duotone",
+    "cat": "design",
+    "badge": "free",
+    "description": "Apply a two-color effect to images easily",
+    "url": "https://duotone.shapefactory.co"
+  },
+  {
+    "name": "Photor",
+    "cat": "design",
+    "badge": "free",
+    "description": "Edit and filter images online quickly",
+    "url": "https://photor.io"
+  },
+  {
+    "name": "Cleanup.pictures",
+    "cat": "design",
+    "badge": "free",
+    "description": "Remove any element from an image with AI",
+    "url": "https://cleanup.pictures"
+  },
+  {
+    "name": "Upscayl",
+    "cat": "design",
+    "badge": "free",
+    "description": "Upscale images with AI for free and offline",
+    "url": "https://upscayl.org"
+  },
+  {
+    "name": "Squoosh ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Compress images with high quality directly in the browser",
+    "url": "https://squoosh.app"
+  },
+  {
+    "name": "SVGOMG ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Optimize and shrink SVG files quickly",
+    "url": "https://jakearchibald.github.io/svgomg"
+  },
+  {
+    "name": "Pattern.monster",
+    "cat": "design",
+    "badge": "free",
+    "description": "Generate custom SVG backgrounds and patterns for projects",
+    "url": "https://pattern.monster"
+  },
+  {
+    "name": "Fffuel",
+    "cat": "design",
+    "badge": "free",
+    "description": "A set of tools for generating SVG backgrounds and shapes",
+    "url": "https://fffuel.co"
+  },
+  {
+    "name": "Bgjar",
+    "cat": "design",
+    "badge": "free",
+    "description": "Generate beautiful SVG backgrounds in one click",
+    "url": "https://bgjar.com"
+  },
+  {
+    "name": "Mesh Gradient",
+    "cat": "design",
+    "badge": "free",
+    "description": "Generate beautiful gradient backgrounds for projects",
+    "url": "https://meshgradient.in"
+  },
+  {
+    "name": "Brandmark ️",
+    "cat": "design",
+    "badge": "paid",
+    "description": "Generate a complete brand identity with AI",
+    "url": "https://brandmark.io"
+  },
+  {
+    "name": "Namelix",
+    "cat": "design",
+    "badge": "free",
+    "description": "Generate smart brand names and initial logos",
+    "url": "https://namelix.com"
+  },
+  {
+    "name": "Mockuphone",
+    "cat": "design",
+    "badge": "free",
+    "description": "Mock up mobile apps with realistic phone frames",
+    "url": "https://mockuphone.com"
+  },
+  {
+    "name": "Smartmockups ️",
+    "cat": "design",
+    "badge": "free",
+    "description": "Professional mockups for all devices and products",
+    "url": "https://smartmockups.com"
+  },
+  {
+    "name": "iMovie",
+    "cat": "video",
+    "badge": "free",
+    "description": "Easy and free video editing for Apple users",
+    "url": "https://apple.com/imovie"
+  },
+  {
+    "name": "Final Cut Pro ️",
+    "cat": "video",
+    "badge": "paid",
+    "description": "Professional video editing for Mac users",
+    "url": "https://apple.com/final-cut-pro"
+  },
+  {
+    "name": "Adobe Premiere Pro ️",
+    "cat": "video",
+    "badge": "paid",
+    "description": "The industry standard for professional video editing",
+    "url": "https://adobe.com/products/premiere"
+  },
+  {
+    "name": "Adobe After Effects",
+    "cat": "video",
+    "badge": "paid",
+    "description": "Create professional visual effects and motion graphics",
+    "url": "https://adobe.com/products/aftereffects"
+  },
+  {
+    "name": "Motion",
+    "cat": "video",
+    "badge": "paid",
+    "description": "Motion graphics software from Apple for Mac users",
+    "url": "https://apple.com/motion"
+  },
+  {
+    "name": "Blender",
+    "cat": "video",
+    "badge": "free",
+    "description": "Full free 3D and motion graphics software",
+    "url": "https://blender.org"
+  },
+  {
+    "name": "Rive Animate",
+    "cat": "video",
+    "badge": "free",
+    "description": "Create interactive animations for web and apps",
+    "url": "https://rive.app"
+  },
+  {
+    "name": "Animaker",
+    "cat": "video",
+    "badge": "free",
+    "description": "Create animated videos without experience",
+    "url": "https://animaker.com"
+  },
+  {
+    "name": "Vyond",
+    "cat": "video",
+    "badge": "paid",
+    "description": "Create professional animated videos for business",
+    "url": "https://vyond.com"
+  },
+  {
+    "name": "Powtoon",
+    "cat": "video",
+    "badge": "free",
+    "description": "Animated presentation videos made easy",
+    "url": "https://powtoon.com"
+  },
+  {
+    "name": "Biteable",
+    "cat": "video",
+    "badge": "free",
+    "description": "Create short marketing videos quickly",
+    "url": "https://biteable.com"
+  },
+  {
+    "name": "Vidyard",
+    "cat": "video",
+    "badge": "free",
+    "description": "Record and send videos to clients and colleagues",
+    "url": "https://vidyard.com"
+  },
+  {
+    "name": "Streamyard",
+    "cat": "video",
+    "badge": "free",
+    "description": "Professional live streaming on multiple platforms at once",
+    "url": "https://streamyard.com"
+  },
+  {
+    "name": "Riverside.fm ️",
+    "cat": "video",
+    "badge": "free",
+    "description": "Record podcast and video in studio quality over the internet",
+    "url": "https://riverside.fm"
+  },
+  {
+    "name": "Squadcast",
+    "cat": "video",
+    "badge": "free",
+    "description": "Record podcasts and interviews in high quality",
+    "url": "https://squadcast.fm"
+  },
+  {
+    "name": "Cleanvoice",
+    "cat": "video",
+    "badge": "free",
+    "description": "Remove filler words and noise from your recordings",
+    "url": "https://cleanvoice.ai"
+  },
+  {
+    "name": "Auphonic",
+    "cat": "video",
+    "badge": "free",
+    "description": "Automatically improve audio quality for podcasts",
+    "url": "https://auphonic.com"
+  },
+  {
+    "name": "Podbean ️",
+    "cat": "video",
+    "badge": "free",
+    "description": "Publish and host your podcast on all platforms",
+    "url": "https://podbean.com"
+  },
+  {
+    "name": "Buzzsprout",
+    "cat": "video",
+    "badge": "free",
+    "description": "Host and publish podcasts easily",
+    "url": "https://buzzsprout.com"
+  },
+  {
+    "name": "Castbox",
+    "cat": "video",
+    "badge": "free",
+    "description": "Podcast listening app with massive content",
+    "url": "https://castbox.fm"
+  },
+  {
+    "name": "Substack",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Publish a newsletter and get subscribers and income",
+    "url": "https://substack.com"
+  },
+  {
+    "name": "Medium ️",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Publish articles and reach millions of readers",
+    "url": "https://medium.com"
+  },
+  {
+    "name": "Ghost",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Open-source publishing platform for writers and journalists",
+    "url": "https://ghost.org"
+  },
+  {
+    "name": "Beehiiv",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Professional newsletter with powerful growth tools",
+    "url": "https://beehiiv.com"
+  },
+  {
+    "name": "ConvertKit",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Build an email list and send newsletters for creators",
+    "url": "https://convertkit.com"
+  },
+  {
+    "name": "Mailchimp",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Send newsletters and marketing campaigns",
+    "url": "https://mailchimp.com"
+  },
+  {
+    "name": "Canary Mail",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Smart mail app with AI summaries",
+    "url": "https://canarymail.io"
+  },
+  {
+    "name": "Ulysses ️",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "Professional writing editor for Apple users",
+    "url": "https://ulysses.app"
+  },
+  {
+    "name": "iA Writer",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "Write without distractions with a very clean interface",
+    "url": "https://ia.net/writer"
+  },
+  {
+    "name": "Scrivener",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "Software for writing novels and long-form projects",
+    "url": "https://literatureandlatte.com/scrivener"
+  },
+  {
+    "name": "Reedsy",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Book writing and publishing tools with editor network",
+    "url": "https://reedsy.com"
+  },
+  {
+    "name": "Atticus",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "Format and design books for self-publishing",
+    "url": "https://atticus.io"
+  },
+  {
+    "name": "Vellum",
+    "cat": "writing",
+    "badge": "paid",
+    "description": "Design professional books for Amazon and other stores",
+    "url": "https://vellum.pub"
+  },
+  {
+    "name": "Manuskript",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Open-source novel and story writing",
+    "url": "https://theologeek.ch/manuskript"
+  },
+  {
+    "name": "Bibisco",
+    "cat": "writing",
+    "badge": "free",
+    "description": "Structured novel writing with character development",
+    "url": "https://bibisco.com"
+  },
+  {
+    "name": "Khan Academy",
+    "cat": "education",
+    "badge": "free",
+    "description": "Free lessons in math, science and more for all levels",
+    "url": "https://khanacademy.org"
+  },
+  {
+    "name": "Coursera",
+    "cat": "education",
+    "badge": "free",
+    "description": "Courses from top universities with accredited certificates",
+    "url": "https://coursera.org"
+  },
+  {
+    "name": "edX",
+    "cat": "education",
+    "badge": "free",
+    "description": "Learn from MIT, Harvard and other world universities for free",
+    "url": "https://edx.org"
+  },
+  {
+    "name": "Udemy",
+    "cat": "education",
+    "badge": "paid",
+    "description": "Thousands of courses in all fields at reasonable prices",
+    "url": "https://udemy.com"
+  },
+  {
+    "name": "Skillshare",
+    "cat": "education",
+    "badge": "free",
+    "description": "Creative courses in design, art and writing",
+    "url": "https://skillshare.com"
+  },
+  {
+    "name": "LinkedIn Learning",
+    "cat": "education",
+    "badge": "paid",
+    "description": "Professional courses from LinkedIn with resume certificates",
+    "url": "https://linkedin.com/learning"
+  },
+  {
+    "name": "Brilliant",
+    "cat": "education",
+    "badge": "free",
+    "description": "Learn math and science interactively and enjoyably",
+    "url": "https://brilliant.org"
+  },
+  {
+    "name": "Wolfram Alpha",
+    "cat": "education",
+    "badge": "free",
+    "description": "Solve math and science problems with detailed steps",
+    "url": "https://wolframalpha.com"
+  },
+  {
+    "name": "Quizlet",
+    "cat": "education",
+    "badge": "free",
+    "description": "Flashcards and quizzes to memorize any subject",
+    "url": "https://quizlet.com"
+  },
+  {
+    "name": "Photomath",
+    "cat": "education",
+    "badge": "free",
+    "description": "Solve math problems with camera and step-by-step explanation",
+    "url": "https://photomath.com"
+  },
+  {
+    "name": "Socratic",
+    "cat": "education",
+    "badge": "free",
+    "description": "Homework help with AI from Google",
+    "url": "https://socratic.org"
+  },
+  {
+    "name": "Chegg",
+    "cat": "education",
+    "badge": "paid",
+    "description": "Textbook solutions and homework help",
+    "url": "https://chegg.com"
+  },
+  {
+    "name": "Grammarly EDU",
+    "cat": "education",
+    "badge": "free",
+    "description": "Improve academic writing for students and researchers",
+    "url": "https://grammarly.com/edu"
+  },
+  {
+    "name": "Canva for Education",
+    "cat": "education",
+    "badge": "free",
+    "description": "Design presentations and educational materials free for students",
+    "url": "https://canva.com/education"
+  },
+  {
+    "name": "Google Scholar",
+    "cat": "education",
+    "badge": "free",
+    "description": "Search engine specialized in scientific papers and research",
+    "url": "https://scholar.google.com"
+  },
+  {
+    "name": "ResearchGate",
+    "cat": "education",
+    "badge": "free",
+    "description": "Network for researchers and sharing scientific papers",
+    "url": "https://researchgate.net"
+  },
+  {
+    "name": "Sci-Hub",
+    "cat": "education",
+    "badge": "free",
+    "description": "Access paid scientific research for free",
+    "url": "https://sci-hub.se"
+  },
+  {
+    "name": "MIT OpenCourseWare ️",
+    "cat": "education",
+    "badge": "free",
+    "description": "Complete free study materials from MIT",
+    "url": "https://ocw.mit.edu"
+  },
+  {
+    "name": "TED-Ed",
+    "cat": "education",
+    "badge": "free",
+    "description": "Short and useful lessons in the engaging TED style",
+    "url": "https://ed.ted.com"
+  },
+  {
+    "name": "Crash Course",
+    "cat": "education",
+    "badge": "free",
+    "description": "Quick and concise explanation of all subjects",
+    "url": "https://thecrashcourse.com"
+  },
+  {
+    "name": "Codecademy",
+    "cat": "education",
+    "badge": "free",
+    "description": "Learn programming interactively for beginners",
+    "url": "https://codecademy.com"
+  },
+  {
+    "name": "freeCodeCamp",
+    "cat": "education",
+    "badge": "free",
+    "description": "Learn web development free with real projects",
+    "url": "https://freecodecamp.org"
+  },
+  {
+    "name": "The Odin Project ️",
+    "cat": "education",
+    "badge": "free",
+    "description": "Comprehensive curriculum for learning web development from scratch",
+    "url": "https://theodinproject.com"
+  },
+  {
+    "name": "CS50 ️",
+    "cat": "education",
+    "badge": "free",
+    "description": "The world's most famous programming course from Harvard",
+    "url": "https://cs50.harvard.edu"
+  }
+]

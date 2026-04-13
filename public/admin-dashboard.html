@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google" content="notranslate">
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body translate="no">
+<div class="admin-header-wrap">
+    <h1><i class="bi bi-grid-1x2-fill"></i> <span id="t-title">ADMIN PANEL</span></h1>
+    <div class="admin-header-right">
+        <a href="/" target="_blank"><i class="bi bi-arrow-up-right-square"></i> <span id="t-site">SITE</span></a>
+        <a href="/admin/logout" class="admin-logout"><i class="bi bi-box-arrow-right"></i> <span id="t-logout">LOGOUT</span></a>
+    </div>
+</div>
+
+<div class="admin-container">
+    <div id="msg"></div>
+
+    <div class="admin-box">
+        <div class="admin-box-title">
+            <span id="t-addtool">ADD TOOL</span>
+            <span class="count" id="toolsCount"></span>
+        </div>
+        <form method="POST" action="/admin/tools/add">
+            <div class="admin-form-grid">
+                <div class="admin-form-group">
+                    <label id="t-name">NAME + EMOJI</label>
+                    <input type="text" name="name" id="ph-name" placeholder="e.g. Notion 📝" required>
+                </div>
+                <div class="admin-form-group">
+                    <label id="t-url">URL</label>
+                    <input type="url" name="url" id="ph-url" placeholder="https://..." required>
+                </div>
+                <div class="admin-form-group">
+                    <label id="t-cat">CATEGORY</label>
+                    <select name="cat" required>
+                        <option value="" id="opt-select">Select...</option>
+                        <option value="ai" id="opt-ai">AI</option>
+                        <option value="design" id="opt-design">Design</option>
+                        <option value="writing" id="opt-writing">Writing</option>
+                        <option value="video" id="opt-video">Video</option>
+                        <option value="education" id="opt-edu">Education</option>
+                    </select>
+                </div>
+                <div class="admin-form-group">
+                    <label id="t-type">TYPE</label>
+                    <select name="badge" required>
+                        <option value="free" id="opt-free">Free</option>
+                        <option value="paid" id="opt-paid">Paid</option>
+                    </select>
+                </div>
+                <div class="admin-form-group full">
+                    <label id="t-desc">DESCRIPTION</label>
+                    <textarea name="description" id="ph-desc" placeholder="Short description..." required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="admin-submit-btn" id="t-addbtn">+ ADD TOOL</button>
+        </form>
+    </div>
+
+    <div class="admin-box">
+        <div class="admin-box-title">
+            <span id="t-toolslist">TOOLS LIST</span>
+            <span class="count" id="toolsCount2"></span>
+        </div>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th id="t-th-num">#</th>
+                    <th id="t-th-name">NAME</th>
+                    <th id="t-th-cat">CAT</th>
+                    <th id="t-th-type">TYPE</th>
+                    <th id="t-th-url">URL</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="toolsTable">
+                <tr><td colspan="6" class="admin-tbl-loading" id="t-loading">LOADING...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google" content="notranslate">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body translate="no">
+    <div class="hero">
+        <div class="scanline"></div>
+
+        <div class="window">
+            <div class="window-bar">
+                <div class="window-bar-left">
+                    <span class="win-dot red"></span>
+                    <span class="win-dot yellow"></span>
+                    <span class="win-dot green"></span>
+                </div>
+                <span class="window-title">PIXEL TOOLS</span>
+                <span class="window-ver">v2.0</span>
+            </div>
+
+            <div class="window-body">
+                <div class="corner tl">+</div>
+                <div class="corner tr">+</div>
+                <div class="corner bl">+</div>
+                <div class="corner br">+</div>
+
+                <h1>USEFUL TOOLS,</h1>
+                <h1>ALL IN ONE PLACE</h1>
+
+                <p>Find and access hundreds of helpful tools for design, writing, and more.</p>
+
+                <div class="cat-icons">
+                    <div class="cat-box" onclick="setFilter('ai')">
+                        <div class="cat-icon"><i class="bi bi-cpu-fill"></i></div>
+                        <div class="cat-label">AI TOOLS</div>
+                    </div>
+                    <div class="cat-box" onclick="setFilter('design')">
+                        <div class="cat-icon"><i class="bi bi-pencil-fill"></i></div>
+                        <div class="cat-label">DESIGN</div>
+                    </div>
+                    <div class="cat-box" onclick="setFilter('writing')">
+                        <div class="cat-icon"><i class="bi bi-file-text-fill"></i></div>
+                        <div class="cat-label">WRITING</div>
+                    </div>
+                    <div class="cat-box" onclick="setFilter('video')">
+                        <div class="cat-icon"><i class="bi bi-camera-video-fill"></i></div>
+                        <div class="cat-label">VIDEO</div>
+                    </div>
+                </div>
+
+                <a href="/browse.html?page=2" class="browse-btn">
+                    <span>BROWSE TOOLS</span>
+                    <i class="bi bi-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+
+        <button class="admin-btn" onclick="window.location.href='/admin/login'" title="admin">
+            <i class="bi bi-person-circle"></i>
+        </button>
+    </div>
+
+    <div class="filters-section" id="tools">
+        <button onclick="setFilter('all')" id="btn-all" class="filter-btn active-btn">ALL</button>
+        <button onclick="setFilter('ai')" id="btn-ai" class="filter-btn">AI</button>
+        <button onclick="setFilter('design')" id="btn-design" class="filter-btn">DESIGN</button>
+        <button onclick="setFilter('writing')" id="btn-writing" class="filter-btn">WRITING</button>
+        <button onclick="setFilter('video')" id="btn-video" class="filter-btn">VIDEO</button>
+        <button onclick="setFilter('education')" id="btn-education" class="filter-btn">EDUCATION</button>
+    </div>
+
+    <div class="tools-section">
+        <div id="tools-list"></div>
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-name">PIXEL TOOLS</div>
+        <div class="footer-contact">
+            <span><i class="bi bi-envelope"></i> baderhelal8@gmail.com</span>
+            <span><i class="bi bi-telephone"></i> 0506894487</span>
+        </div>
+        <div class="footer-copy">© 2026 Pixel Tools — All rights reserved</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
