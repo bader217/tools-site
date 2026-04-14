@@ -1,24 +1,49 @@
 const express = require("express");
-const mysql = require("mysql2");
 const session = require("express-session");
 const bcrypt = require("bcryptjs");
 const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const VALID_CATS = ["ai", "design", "writing", "video", "education"];
 const VALID_BADGES = ["free", "paid"];
 
-const seedTools = JSON.parse(fs.readFileSync(path.join(__dirname, "tools-seed.json"), "utf8"));
+const TOOLS_FILE = path.join(__dirname, "data", "tools.json");
+const ADMINS_FILE = path.join(__dirname, "data", "admins.json");
+
+function readTools() {
+    try {
+        return JSON.parse(fs.readFileSync(TOOLS_FILE, "utf8"));
+    } catch {
+        return [];
+    }
+}
+
+function writeTools(tools) {
+    fs.writeFileSync(TOOLS_FILE, JSON.stringify(tools, null, 2), "utf8");
+}
+
+function readAdmins() {
+    try {
+        return JSON.parse(fs.readFileSync(ADMINS_FILE, "utf8"));
+    } catch {
+        return [];
+    }
+}
+
+function nextId(items) {
+    if (!items.length) return 1;
+    return Math.max(...items.map(t => t.id || 0)) + 1;
+}
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(session({
     secret: process.env.SESSION_SECRET || "tools-site-secret-local",
-    resave: true,
+    resave: false,
     saveUninitialized: false,
     cookie: {
         httpOnly: true,
@@ -26,69 +51,6 @@ app.use(session({
         maxAge: 1000 * 60 * 60 * 24
     }
 }));
-
-function createDbConnection() {
-    const db = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "",
-        database: "tools_db"
-    });
-
-    db.connect(err => {
-        if (err) {
-            console.log("MySQL connection failed:", err.message);
-            return;
-        }
-        console.log("Connected to MySQL");
-    });
-
-    db.on("error", err => {
-        console.log("MySQL error:", err.message);
-    });
-
-    return db;
-}
-
-let dbConnection = createDbConnection();
-
-function repairSeedData() {
-    if (!Array.isArray(seedTools) || seedTools.length === 0) return;
-
-    let index = 0;
-
-    const next = () => {
-        if (index >= seedTools.length) return;
-        const tool = seedTools[index++];
-
-        dbConnection.query("SELECT id FROM tools WHERE name = ? LIMIT 1", [tool.name], (err, results) => {
-            if (err) {
-                next();
-                return;
-            }
-
-            const values = [tool.cat, tool.badge, tool.description, tool.url];
-
-            if (results && results.length > 0) {
-                dbConnection.query(
-                    "UPDATE tools SET cat = ?, badge = ?, description = ?, url = ? WHERE id = ?",
-                    [...values, results[0].id],
-                    () => next()
-                );
-            } else {
-                dbConnection.query(
-                    "INSERT INTO tools (name, cat, badge, description, url) VALUES (?, ?, ?, ?, ?)",
-                    [tool.name, tool.cat, tool.badge, tool.description, tool.url],
-                    () => next()
-                );
-            }
-        });
-    };
-
-    next();
-}
-
-setTimeout(repairSeedData, 1200);
 
 function normalizePage(value) {
     const n = parseInt(value, 10);
@@ -99,49 +61,33 @@ app.get("/api/tools", (req, res) => {
     const cat = String(req.query.cat || "all").toLowerCase();
     const page = normalizePage(req.query.page);
     const limit = Math.min(parseInt(req.query.limit, 10) || 30, 100);
-    const offset = (page - 1) * limit;
 
-    let query = "SELECT id, name, cat, badge, description, url FROM tools WHERE 1=1";
-    let countQuery = "SELECT COUNT(*) AS total FROM tools WHERE 1=1";
-    const params = [];
-    const countParams = [];
+    let tools = readTools();
 
-    if (cat && cat !== "all" && VALID_CATS.includes(cat)) {
-        query += " AND cat = ?";
-        countQuery += " AND cat = ?";
-        params.push(cat);
-        countParams.push(cat);
+    if (cat !== "all" && VALID_CATS.includes(cat)) {
+        tools = tools.filter(t => t.cat === cat);
     }
 
-    query += " ORDER BY id DESC LIMIT ? OFFSET ?";
-    params.push(limit, offset);
+    const total = tools.length;
+    const offset = (page - 1) * limit;
+    const paginated = tools.slice().reverse().slice(offset, offset + limit);
 
-    dbConnection.query(countQuery, countParams, (countErr, countResult) => {
-        if (countErr) return res.status(500).json({ error: "Database error" });
-
-        dbConnection.query(query, params, (err, results) => {
-            if (err) return res.status(500).json({ error: "Database error" });
-
-            res.json({
-                tools: results.map(tool => ({
-                    id: tool.id,
-                    name: tool.name,
-                    cat: tool.cat,
-                    badge: tool.badge,
-                    description: tool.description || "",
-                    url: tool.url
-                })),
-                total: countResult[0].total
-            });
-        });
+    res.json({
+        tools: paginated.map(t => ({
+            id: t.id,
+            name: t.name,
+            cat: t.cat,
+            badge: t.badge,
+            description: t.description || "",
+            url: t.url
+        })),
+        total
     });
 });
 
 app.get("/api/tools/count", (req, res) => {
-    dbConnection.query("SELECT COUNT(*) AS count FROM tools", (err, results) => {
-        if (err) return res.status(500).json({ error: "Database error" });
-        res.json({ count: results[0].count });
-    });
+    const tools = readTools();
+    res.json({ count: tools.length });
 });
 
 app.get("/admin/login", (req, res) => {
@@ -154,32 +100,31 @@ app.post("/admin/login", (req, res) => {
 
     if (!username || !password) return res.redirect("/admin/login?error=1");
 
-    dbConnection.query("SELECT * FROM admins WHERE username = ?", [username], (err, results) => {
-        if (err || results.length === 0) return res.redirect("/admin/login?error=1");
+    const admins = readAdmins();
+    const admin = admins.find(a => a.username === username);
 
-        const admin = results[0];
-        const storedPassword = String(admin.password || "");
+    if (!admin) return res.redirect("/admin/login?error=1");
 
-        const finishLogin = (ok) => {
-            if (!ok) return res.redirect("/admin/login?error=1");
-            req.session.isAdmin = true;
-            req.session.adminId = admin.id;
-            req.session.save(saveErr => {
-                if (saveErr) return res.redirect("/admin/login?error=1");
-                res.redirect("/admin/dashboard");
-            });
-        };
+    const stored = String(admin.password || "");
 
-        if (storedPassword.startsWith("$2")) {
-            bcrypt.compare(password, storedPassword, (compareErr, match) => {
-                if (compareErr) return res.redirect("/admin/login?error=1");
-                finishLogin(match);
-            });
-            return;
-        }
+    const finish = (ok) => {
+        if (!ok) return res.redirect("/admin/login?error=1");
+        req.session.isAdmin = true;
+        req.session.adminId = admin.id;
+        req.session.save(err => {
+            if (err) return res.redirect("/admin/login?error=1");
+            res.redirect("/admin/dashboard");
+        });
+    };
 
-        finishLogin(password === storedPassword);
-    });
+    if (stored.startsWith("$2")) {
+        bcrypt.compare(password, stored, (err, match) => {
+            if (err) return res.redirect("/admin/login?error=1");
+            finish(match);
+        });
+    } else {
+        finish(password === stored);
+    }
 });
 
 app.get("/admin/logout", (req, res) => {
@@ -193,10 +138,8 @@ app.get("/admin/dashboard", (req, res) => {
 
 app.get("/admin/tools", (req, res) => {
     if (!req.session.isAdmin) return res.status(403).json({ error: "Forbidden" });
-    dbConnection.query("SELECT * FROM tools ORDER BY id DESC", (err, results) => {
-        if (err) return res.status(500).json({ error: "Database error" });
-        res.json(results);
-    });
+    const tools = readTools().slice().reverse();
+    res.json(tools);
 });
 
 app.post("/admin/tools/add", (req, res) => {
@@ -212,14 +155,11 @@ app.post("/admin/tools/add", (req, res) => {
         return res.redirect("/admin/dashboard?error=invalid");
     }
 
-    dbConnection.query(
-        "INSERT INTO tools (name, cat, badge, description, url) VALUES (?, ?, ?, ?, ?)",
-        [name, cat, badge, description, url],
-        err => {
-            if (err) return res.redirect("/admin/dashboard?error=db");
-            res.redirect("/admin/dashboard?success=1");
-        }
-    );
+    const tools = readTools();
+    tools.push({ id: nextId(tools), name, cat, badge, description, url });
+    writeTools(tools);
+
+    res.redirect("/admin/dashboard?success=1");
 });
 
 app.post("/admin/tools/delete/:id", (req, res) => {
@@ -228,10 +168,15 @@ app.post("/admin/tools/delete/:id", (req, res) => {
     const id = parseInt(req.params.id, 10);
     if (!id || Number.isNaN(id)) return res.redirect("/admin/dashboard?error=invalid");
 
-    dbConnection.query("DELETE FROM tools WHERE id = ?", [id], err => {
-        if (err) return res.redirect("/admin/dashboard?error=db");
-        res.redirect("/admin/dashboard?success=deleted");
-    });
+    const tools = readTools();
+    const filtered = tools.filter(t => t.id !== id);
+
+    if (filtered.length === tools.length) {
+        return res.redirect("/admin/dashboard?error=invalid");
+    }
+
+    writeTools(filtered);
+    res.redirect("/admin/dashboard?success=deleted");
 });
 
 app.listen(PORT, () => {
