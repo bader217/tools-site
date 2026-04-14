@@ -781,3 +781,109 @@ a.page-btn {
 .browse-page .filters-section {
     top: 0;
 }
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 30px 12px;
+    }
+
+    .window {
+        max-width: 100%;
+        box-shadow: 4px 4px 0 #000;
+    }
+
+    .window-body {
+        padding: 22px 16px;
+    }
+
+    .window-body h1 {
+        font-size: 26px;
+    }
+
+    .window-body p {
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+
+    .cat-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cat-box {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .browse-btn {
+        font-size: 12px;
+        padding: 14px;
+        letter-spacing: 1px;
+    }
+
+    .filters-section {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .filter-btn {
+        font-size: 8px;
+        padding: 6px 10px;
+    }
+
+    .tools-section {
+        padding: 0 10px;
+    }
+
+    #tools-list {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-container {
+        padding: 0 10px;
+    }
+
+    .admin-box {
+        padding: 14px;
+    }
+
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .admin-header-wrap h1 {
+        font-size: 9px;
+    }
+
+    .admin-header-right a,
+    .admin-lang-btn {
+        font-size: 8px;
+        padding: 5px 8px;
+    }
+
+    .login-window {
+        max-width: 95%;
+    }
+}
