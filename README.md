@@ -9,3 +9,10 @@ https://tools-site1.onrender.com
 - Displays a collection of tools
 - Simple and easy to use
 - Fast loading
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- JSON
